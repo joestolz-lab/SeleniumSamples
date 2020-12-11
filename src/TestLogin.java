@@ -15,7 +15,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class TestLogin {
 	
-	System.setProperty("webdriver.chrome.driver", "e:\\Users\\Stolz Parents\\Downloads\\chromedriver_win32\\chromedriver.exe");
+//	System.setProperty("webdriver.chrome.driver", "e:\\Users\\Stolz Parents\\Downloads\\chromedriver_win32\\chromedriver.exe");
 	
 	WebDriver driver=new ChromeDriver(); 
 	// Launch website  

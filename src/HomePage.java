@@ -1,3 +1,5 @@
+package test2;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -11,7 +13,7 @@ public class HomePage {
   private By messageBy = By.tagName("h1");
 
   public HomePage(WebDriver driver){
-    this.driver = driver;
+    HomePage.driver = driver;
     if (!driver.getTitle().equals("Home Page of logged in user")) {
       throw new IllegalStateException("This is not Home Page of logged in user," +
             " current page is: " + driver.getCurrentUrl());
