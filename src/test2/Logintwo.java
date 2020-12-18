@@ -9,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 
 
 	import java.util.concurrent.TimeUnit;
+	import java.awt.* ;
 	import org.openqa.selenium.firefox.FirefoxDriver;
 	import org.testng.annotations.BeforeTest;
 	import org.testng.annotations.Test;
@@ -75,5 +76,11 @@ public class Logintwo {
 	    //Verify home page
 
 	    Assert.assertTrue(objHomePage.getHomePageDashboardUserName().toLowerCase().contains("manger id : mgr123"));
+	   // Assert.assertTrue(objHomePage.getHomePageDashboardUserName().toLowerCase().contains("manger id : mgr123"));
+	     //boolean msg1 = objHomePage.getHomePageDashboardUserName().toLowerCase().contains("manger id : mgr123");
+	     System.out.print("td message "+objHomePage.getHomePageDashboardUserName().toLowerCase()); 
+	     System.out.print("\n Guru title " + objHomePage.getMessageText());
+	     System.out.print("\n Welcome " + objHomePage.getHeading()+"\n");
+	     
 	    }
 }

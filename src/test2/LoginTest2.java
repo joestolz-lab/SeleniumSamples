@@ -10,7 +10,7 @@ public class LoginTest2 {
 
 	    By user99GuruName = By.name("uid");
 	    By password99Guru = By.name("password");
-	    By titleText =By.className("barone");
+	    By titleText =By.className("barone");  
 	    By login = By.name("btnLogin");
 
 	    public LoginTest2(WebDriver driver){
