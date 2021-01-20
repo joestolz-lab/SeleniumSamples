@@ -6,21 +6,21 @@ import org.testng.annotations.*;
 import org.openqa.selenium.By;  
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver; 
 
 
 	import java.util.concurrent.TimeUnit;
+	import java.awt.* ;
 	import org.openqa.selenium.firefox.FirefoxDriver;
 	import org.testng.annotations.BeforeTest;
 	import org.testng.annotations.Test;
 	
 	import test2.LoginTest2;
+	import test2.HomePage1;
 
 
 public class Logintwo {
 	
-	    String driverPath = "C:\\geckodriver.exe";  
+	    String driverPath = "e:\\Users\\Stolz Parents\\Downloads\\geckodriver-v0.28.0-win64\\geckodriver.exe";  
 	    WebDriver driver;
 	    LoginTest2 objLogin;
 
@@ -71,10 +71,16 @@ public class Logintwo {
 
 	    // go the next page
 
-	   // objHomePage = new Guru99HomePage(driver);
+	    HomePage1 objHomePage = new HomePage1(driver);
 
 	    //Verify home page
 
+	    Assert.assertTrue(objHomePage.getHomePageDashboardUserName().toLowerCase().contains("manger id : mgr123"));
 	   // Assert.assertTrue(objHomePage.getHomePageDashboardUserName().toLowerCase().contains("manger id : mgr123"));
+	     //boolean msg1 = objHomePage.getHomePageDashboardUserName().toLowerCase().contains("manger id : mgr123");
+	     System.out.print("td message "+objHomePage.getHomePageDashboardUserName().toLowerCase()); 
+	     System.out.print("\n Guru title " + objHomePage.getMessageText());
+	     System.out.print("\n Welcome " + objHomePage.getHeading()+"\n");
+	     
 	    }
 }
